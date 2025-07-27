@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExc2s5M2Z5c3g2ZTFjcDQyemtkd2o4b2JtcHZzZWx5dTJscWdpbWxqMyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/g9582DNuQppxC/giphy.gif" width="160" />
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExc2s5M2Z5c3g2ZTFjcDQyemtkd2o4b2JtcHZzZWx5dTJscWdpbWxqMyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/g9582DNuQppxC/giphy.gif" width="1000" />
 
 # 🧩 ZeroCode SaaS Builder
 

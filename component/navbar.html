@@ -1,0 +1,101 @@
+<head>
+    <style>
+        nav {
+            background-color: rgb(18, 3, 39);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-family: sans-serif;
+            gap: 20rem;
+        }
+
+        nav h2 {
+            font-size: 2rem;
+            cursor: pointer;
+            margin-left: 7%;
+            color: white;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 3rem;
+            margin-left: 6%;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgba(255, 255, 255, 0.733);
+        }
+
+        a:hover {
+            color: white;
+            cursor: pointer;
+        }
+
+        button {
+            background-color: yellow;
+            border: none;
+            border-radius: 2rem;
+            padding: 0.5rem 1.5rem;
+            color: black;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            margin-right: -16%;
+        }
+
+        button:hover {
+            filter: brightness(0.8);
+            transform: scale(0.9);
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+            background-color: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.493);
+            border-top: transparent;
+            border-right: transparent;
+            border-left: transparent;
+            padding: 0rem 0.2rem;
+        }
+
+        .search-bar input {
+            border: none;
+            outline: none;
+            padding: 0.3rem 0.5rem;
+            font-size: 1rem;
+            background: transparent;
+            color: rgb(255, 255, 255);
+        }
+
+        .search-bar i {
+            color: #ffffff;
+            margin-left: 0.5rem;
+        }
+    </style>
+    <!-- Correct Font Awesome (Free version) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+    <nav>
+        <h2>Navbar</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button>Get Started</button>
+  <div class="search-bar">
+    <input type="text" placeholder="Search..." />
+    <i class="fas fa-search"></i>
+  </div>
+    </nav>
+</body>

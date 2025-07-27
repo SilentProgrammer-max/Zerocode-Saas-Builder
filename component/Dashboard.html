@@ -1,0 +1,265 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+    .body {
+        background-color: #ffffff;
+        padding: 15px 20px;
+        font-family: sans-serif;
+        margin-right: auto;
+    }
+
+    .dashboard {
+        background-color: #F1F5F5;
+        border: transparent;
+        height: 97%;
+        overflow: auto;
+        border-radius: 10px;
+    }
+
+    h2 {
+        font-size: 2rem;
+        font-weight: 500;
+        color: black;
+        margin-left: 34px;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .box {
+        display: flex;
+        gap: 1%;
+    }
+
+    .small {
+        background-color: #FFFFFF;
+        padding: 5px;
+        width: 18%;
+        margin-left: 2%;
+        color: black;
+        margin-bottom: auto;
+    }
+
+    .sm {
+        color: rgba(56, 56, 56, 0.685);
+        font-size: 0.9rem;
+        margin-bottom: 5px;
+        margin-left: 7px;
+    }
+
+    .fa-calendar {
+        margin-left: 7px;
+        color: rgba(56, 56, 56, 0.685);
+    }
+
+    .sma {
+        background-color: #FFFFFF;
+        padding: 5px;
+        width: 12%;
+        color: black;
+    }
+
+    .services {
+        color: rgba(56, 56, 56, 0.685);
+        font-size: 0.9rem;
+        margin-bottom: 5px;
+        margin-left: 7px;
+    }
+
+    .fa-caret-down {
+        margin-left: 92%;
+        margin-top: -13%;
+        display: flex;
+        justify-content: center;
+        color: rgba(56, 56, 56, 0.685);
+    }
+
+    .span {
+        margin-left: 7px;
+    }
+
+    .smal {
+        background-color: #FFFFFF;
+        padding: 5px;
+        width: 13%;
+        color: black;
+    }
+
+    .posts {
+        color: rgba(56, 56, 56, 0.685);
+        font-size: 0.9rem;
+        margin-bottom: 5px;
+        margin-left: 7px;
+    }
+
+    .fa-solid {
+        margin-left: 92%;
+        margin-top: -13%;
+        display: flex;
+        justify-content: center;
+        color: rgba(56, 56, 56, 0.685);
+    }
+
+    .stats {
+        display: flex;
+        /* ← was grid, ab flex use hoga */
+        align-items: flex-start;
+        /* cards upar align hon */
+        gap: 10px;
+        /* space between cards */
+        margin-left: 2%;
+        margin-top: 15px;
+    }
+
+    .left-cards {
+        display: grid;
+        grid-template-rows: repeat(4, auto);
+        gap: 10px;
+    }
+
+    .card {
+        background: #fff;
+        padding: 20px;
+        border-radius: 12px;
+        width: 300px;
+        height: 130px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .card h3 {
+        color: rgba(56, 56, 56, 0.685);
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: -5px;
+    }
+
+    .card p {
+        font-size: 50px;
+        font-weight: 700;
+        display: grid;
+        text-align: center;
+        gap: 5px;
+        margin-top: -2px;
+        color: black;
+    }
+
+    .green {
+        color: green;
+        font-size: 16px;
+        display: grid;
+        margin-top: -50px;
+        text-align: center;
+    }
+
+    .red {
+        color: red;
+        font-size: 16px;
+        display: grid;
+        margin-top: -50px;
+        text-align: center;
+    }
+
+    .pre {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        color: rgba(56, 56, 56, 0.685);
+        font-family: sans-serif;
+        font-size: 12px;
+        margin-top: 15px;
+    }
+
+    .plot-scatter-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .charts img {
+        width: 450px;
+        height: 352px;
+        border-radius: 10px;
+        margin-left: 9px;
+    }
+
+    .plot img {
+        width: 450px;
+        height: 351px;
+        border-radius: 10px;
+        margin-left: -6px;
+    }
+
+    .scatter img {
+        width: 420px;
+        height: 351px;
+        border-radius: 10px;
+        margin-left: -6px;
+    }
+
+    .graph img {
+        margin: -349px 395px;
+        width: 77%;
+        border-radius: 10px;
+        height: 350px;
+        overflow: hidden;
+        margin-bottom: auto;
+        margin-right: auto;
+    }
+</style>
+<div class="body">
+    <div class="dashboard">
+        <h2>Supply Chain Dashboard</h2>
+        <div class="box">
+            <div class="small">
+                <div class="sm">Auto data range</div>
+                <i class="fa-regular fa-calendar"></i><span> This Week</span>
+            </div>
+            <div class="sma">
+                <div class="services">Services</div>
+                <span class="span">All</span> <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div class="smal">
+                <div class="posts">Posts</div>
+                <span class="span">All</span> <i class="fa-solid fa-caret-down"></i>
+            </div>
+        </div>
+        <div class="stats">
+            <div class="left-cards">
+                <div class="card">
+                    <h3>Inventory Quantity </h3>
+                    <p>1,478 </p><span class="green">↑ 13%</span>
+                    <pre class="pre">vs previous 7 days</pre>
+                </div>
+                <div class="card">
+                    <h3>Order Fulfillment Rate </h3>
+                    <p>93% </p><span class="green">↑ 8%</span>
+                    <pre class="pre">vs previous 7 days</pre>
+                </div>
+                <div class="card">
+                    <h3>Return Rate </h3>
+                    <p>1.4% </p><span class="red">↑ 1%</span>
+                    <pre class="pre">vs previous 7 days</pre>
+                </div>
+                <div class="card">
+                    <h3>Inventory Days of Supply </h3>
+                    <p>53 </p><span class="green">↑ 2</span>
+                    <pre class="pre">vs previous 7 days</pre>
+                </div>
+            </div>
+            <div class="plot-scatter-row">
+                <div class="charts">
+                    <img src="https://assets.fta.cirium.com/wp-content/uploads/2023/11/02161255/image-1.png" alt="">
+                </div>
+                <div class="plot">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/KMIP_Interop_Clients.png" alt="">
+                </div>
+                <div class="scatter">
+                    <img src="https://www.researchgate.net/profile/Krishna-Giri-Narra/publication/328826318/figure/fig2/AS:690896878198787@1541734060486/D-scatter-plot-of-the-value-of-3-adjacent-gradients-from-150-iterations-the-150-blue.ppm"
+                        alt="">
+                </div>
+            </div>
+        </div>
+        <div class="graph">
+            <img src="https://t1dexchange.org/wp-content/uploads/2023/07/Screen-Shot-2023-07-07-at-10.02.25-AM-1024x375.png"
+                alt="">
+        </div>
+    </div>
+</div>

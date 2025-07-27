@@ -1,0 +1,378 @@
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+    }
+
+    .services {
+        font-family: sans-serif;
+        scroll-behavior: smooth;
+    }
+
+    .nav {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        gap: 598px;
+        margin-top: -10px;
+        margin-bottom: -10px;
+        background-color: white;
+    }
+
+    .img {
+        display: flex;
+    }
+
+    .img img {
+        text-align: left;
+        margin-top: 30px;
+        margin-right: -5px;
+    }
+
+    .img h2 {
+        text-align: left;
+        font-size: 35px;
+        transition: all 0.3s ease;
+        color: rgb(0, 0, 0);
+    }
+
+    .img h2:hover {
+        color: rgba(0, 0, 0, 0.74);
+        cursor: pointer;
+    }
+
+    .nav ul {
+        list-style: none;
+        display: flex;
+        gap: 25px;
+    }
+
+    .nav ul li a {
+        text-decoration: none;
+        color: black;
+        transition: all 0.3s ease;
+    }
+
+    .nav ul li a:hover {
+        color: rgba(0, 0, 0, 0.548);
+    }
+
+    .home {
+        background-image: url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YnVpbGRpbmd8ZW58MHx8MHx8fDA%3D");
+        background-size: cover;
+        height: 722px;
+        width: 100%;
+        display: grid;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 40px;
+        line-height: 80px;
+        position: relative;
+        z-index: 2;
+        padding-top: 120px;
+    }
+
+    .overlay {
+        height: 842px;
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.644);
+    }
+
+    .home h1 {
+        z-index: 2;
+        cursor: pointer;
+        color: white;
+    }
+
+    .but {
+        z-index: 2;
+        cursor: pointer;
+        display: flex;
+        gap: 30px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-top: -410px;
+    }
+
+    .but button {
+        border: transparent;
+        border-radius: 3px;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .but button:first-child {
+        background-color: #e66954;
+        color: white;
+        z-index: 2;
+    }
+
+    .but button:nth-child(2) {
+        background-color: #1ea971;
+        color: white;
+        z-index: 2;
+    }
+
+    .but button:hover {
+        cursor: pointer;
+        filter: brightness(1.4);
+    }
+
+    #focus {
+        margin-bottom: 150px;
+        background-color: white;
+        padding-bottom: 100px;
+    }
+
+    .focus {
+        display: grid;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1px;
+        padding-top: 52px;
+    }
+
+    .focus h2 {
+        font-size: 40px;
+        letter-spacing: 2px;
+        color: black;
+    }
+
+    .focus p {
+        font-weight: 500;
+        color: black;
+        margin-bottom: 28px;
+    }
+
+    .cards {
+        display: flex;
+        margin: 0 200px;
+        gap: 100px;
+    }
+
+    .card {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        transition: all 0.3s ease;
+
+    }
+
+    .card:hover {
+        transform: translateY(-8px);
+        color: rgba(255, 255, 255, 0.699);
+        border: transparent;
+    }
+
+    .card h3 {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 1px;
+        font-size: 20px;
+        color: black;
+    }
+
+    .card p {
+        display: flex;
+        text-align: center;
+        color: black;
+    }
+
+    .card img {
+        height: 132px;
+        border-radius: 18px;
+    }
+
+    .image {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        border: 10px solid #ECECEC;
+        border-radius: 166px;
+        width: 183px;
+        height: 176px;
+        margin-left: 40px;
+        margin-bottom: 33px;
+    }
+
+    .one {
+        height: 3px;
+        background-color: rgb(0, 172, 106);
+        width: 127px;
+        margin-left: 84px;
+        border-radius: 53px;
+        margin-top: -10px;
+    }
+
+    .div {
+        height: 3px;
+        background-color: #e66954;
+        width: 109px;
+        margin-left: 93px;
+        border-radius: 53px;
+        margin-top: -11px;
+    }
+
+    .two {
+        height: 3px;
+        background-color: rgb(9, 199, 206);
+        width: 147px;
+        margin-left: 64px;
+        border-radius: 53px;
+        margin-top: -10px;
+    }
+
+    .three {
+        height: 3px;
+        background-color: rgb(219, 235, 5);
+        width: 90px;
+        margin-left: 102px;
+        border-radius: 53px;
+        margin-top: -10px;
+    }
+
+    .card button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 10px;
+        margin-left: 90px;
+        background-color: #e66954;
+        border: transparent;
+        border-radius: 20px;
+        padding: 11px 12px;
+        width: 116px;
+        transition: all 0.3s ease;
+        color: white;
+    }
+
+    .betone {
+        background-color: rgb(0, 172, 106) !important;
+    }
+
+    .bettwo {
+        background-color: rgb(9, 199, 206) !important;
+        margin-left: 82px !important;
+    }
+
+    .betthree {
+        background-color: rgb(219, 235, 5) !important;
+    }
+
+    .bet:hover {
+        filter: brightness(1.3);
+    }
+</style>
+<div class="services">
+    <section id="home">
+        <nav class="nav">
+            <div class="img">
+                <img src="https://i.ibb.co/FkyYcZHk/pngtree-letter-z-logo-png-image-3990276.png" alt="" height="37px" />
+                <h2>ERIF</h2>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#focus">Our Focus</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </nav>
+        <div class="home">
+            <div class="overlay"></div>
+            <h1>
+                AFFORDABLE QUALITY SERVICES FOR <br />
+                SMALL BUSINESSES
+            </h1>
+            <div class="but">
+                <button>OUR WORKS</button>
+                <button>OUR SERVICES</button>
+            </div>
+        </div>
+    </section>
+    <section id="focus">
+        <div class="focus">
+            <h2>OUR FOCUS</h2>
+            <p>
+                We design & develop quality products to help & medium level business.
+            </p>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <div class="image"><img
+                        src="https://images.philips.com/is/image/philipsconsumer/486953b580d243a89b9bb01a013c0fb3?$pnglarge$&wid=1250"
+                        alt="" />
+                </div>
+                <h3>WEB DESIGN</h3>
+                <div class="div"></div>
+                <p>
+                    We create modern, responsive websites tailored to your brand identity,
+                    ensuring a strong digital presence and user-friendly experience across
+                    all devices and platforms for better engagement.
+                </p>
+                <button class="bet">Learn More</button>
+            </div>
+
+            <div class="card">
+                <div class="image"><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW6kjb1Obh8ShEarLv0OQl7RJgRGr7Ag1LGQ&s"
+                        alt="" />
+                </div>
+                <h3>PHOTOGRAPHY</h3>
+                <div class="one"></div>
+                <p>
+                    Our photography services capture impactful moments and visuals that
+                    communicate your brand story, perfect for websites, campaigns, and
+                    social media engagement across diverse industries.
+                </p>
+                <button class="bet betone">Learn More</button>
+            </div>
+
+            <div class="card">
+                <div class="image"><img src="https://images.icon-icons.com/1066/PNG/512/GMail_icon-icons.com_76886.png"
+                        alt="" />
+                </div>
+                <h3>EMAIL MARKETING</h3>
+                <div class="two"></div>
+                <p>
+                    Reach your audience effectively with professional email campaigns that
+                    drive traffic, build trust, and boost conversion rates through
+                    targeted and compelling content strategies.
+                </p>
+                <button class="bet bettwo">Learn More</button>
+            </div>
+
+            <div class="card">
+                <div class="image"><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdnacq0MECTXRobLCZaQr5W5gQi32ipYFtSklK3P-puOYb6sFwJTweWiyJMKE8ZQu6eeE&usqp=CAU"
+                        alt="" />
+                </div>
+                <h3>SEO & SMM</h3>
+                <div class="three"></div>
+                <p>
+                    Enhance visibility with SEO and engage customers through powerful
+                    social media marketing that drives brand awareness, organic traffic,
+                    and business growth across all digital channels.
+                </p>
+                <button class="bet betthree">Learn More</button>
+            </div>
+        </div>
+    </section>
+</div>

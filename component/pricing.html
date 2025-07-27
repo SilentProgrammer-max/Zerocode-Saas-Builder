@@ -1,0 +1,269 @@
+<style>
+  .pricing {
+    display: grid;
+    text-align: center;
+    margin-top: 0px;
+    gap: 10px;
+    font-family: sans-serif;
+    overflow: hidden;
+    margin-bottom: 50px;
+    background-color: white;
+  }
+
+  .pricing h1 {
+    font-size: 36px;
+    margin-bottom: 5px;
+    color: black;
+  }
+
+  .pricing span {
+    font-size: 18px;
+    color: #555555;
+  }
+
+  .price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+  }
+
+  /* ---------- Simple Cards (Plan 1 & 3) ---------- */
+  .card {
+    background: linear-gradient(to bottom,
+        #f5f5f5,
+        #e9e9e9,
+        #e6e6e6,
+        #e0e0e0,
+        #e0e0e0,
+        #b9b9b9,
+        #a3a3a3);
+    color: #333;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    text-align: center;
+    width: 310px;
+    height: 470px;
+
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(128, 128, 128, 0.13);
+    border-top: 1px solid rgb(223, 223, 223);
+    border-bottom: 1px solid rgba(122, 122, 122, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: translateY(0);
+  }
+
+  .card:hover {
+    transform: translateY(-8px);
+    /* Just move up */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+    /* Slightly deeper shadow */
+  }
+
+  .card h2 {
+    font-size: 25px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    font-weight: 500;
+    margin-left: auto;
+    color: #006c9b;
+  }
+
+  .card span {
+    font-size: 28px;
+    font-weight: 500;
+    color: #006c9b;
+  }
+
+  .span {
+    color: #006c9b !important;
+  }
+
+  .card sup {
+    font-size: 16px;
+    color: rgb(68, 68, 68) !important;
+  }
+
+  .card ul {
+    text-decoration: none;
+    list-style: none;
+    display: grid;
+  }
+
+  .card ul li {
+    margin-bottom: 27px;
+    text-align: center;
+    margin-left: -15%;
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  ul {
+    gap: 0rem;
+    margin-left: 13%;
+    padding: 0;
+  }
+
+  .li {
+    background-color: rgba(173, 173, 173, 0.103);
+    padding: 26px 0;
+    width: 115%;
+    margin-left: -15%;
+  }
+
+  .lii {
+    background-color: rgba(83, 83, 83, 0.062);
+    padding: 26px 0;
+    width: 115%;
+    margin-left: -15%;
+  }
+
+  .card button {
+    padding: 10px 20px;
+    background-color: #48b1dd;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-right: auto;
+    margin-bottom: auto;
+  }
+
+  .card button:hover {
+    background-color: #207fa8;
+    transform: scale(1);
+  }
+
+  .but {
+    background-color: white !important;
+    color: #48b1dd !important;
+    border: 1px solid rgba(255, 255, 255, 0.226) !important;
+  }
+
+  .but:hover {
+    background-color: #074d6bd3 !important;
+    cursor: pointer;
+    transform: scale(1);
+  }
+
+  /* ---------- Center Blur Card with Background Image (Plan 2) ---------- */
+  .card-container {
+    width: 320px;
+    height: 537px;
+    background-image: url("https://images.unsplash.com/photo-1515266591878-f93e32bc5937?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Ymx1ZSUyMG5hdHVyZXxlbnwwfHwwfHx8MA%3D%3D");
+    background-size: contain;
+    background-position: center;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: translateY(0);
+  }
+
+  .card-container:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  }
+
+  .card-container .card {
+    background: rgba(255, 255, 255, 0.096);
+    backdrop-filter: blur(10px);
+    color: rgb(255, 255, 255);
+    padding: 30px 0px;
+    border-radius: 5px;
+    width: 320px;
+    height: 494px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    position: relative;
+    border: 2px solid #207fa850;
+  }
+
+  .card-container .card ul {
+    text-align: left;
+  }
+
+  .ribbon {
+    position: absolute;
+    top: 34px;
+    right: -65px;
+    background: #ff4343;
+    color: #ffffff;
+    padding: 12px 67px;
+    transform: rotate(45deg);
+    font-size: 13px;
+    font-weight: bold;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden !important;
+  }
+</style>
+
+<div class="pricing">
+  <h1>Pricing Card Design</h1>
+  <span>Best UI Designs</span>
+  <div class="price">
+    <!-- Plan 1 -->
+    <div class="card">
+      <h2>Plan 1</h2>
+      <span>$50 </span><sup>.50</sup>
+      <ul>
+        <li class="li">Storage <strong>: 250GB</strong></li>
+        <li>Users Allowed <strong>: 1</strong></li>
+        <li class="li">Send up to <strong>: 2GB</strong></li>
+        <li>Full Support</li>
+      </ul>
+      <button>Learn More</button>
+    </div>
+    <!-- Plan 2 -->
+    <div class="card">
+      <h2>Plan 2</h2>
+      <span>$199 </span><sup>.99</sup>
+      <ul>
+        <li class="li">Storage <strong>: 500GB</strong></li>
+        <li>Users Allowed <strong>: 2</strong></li>
+        <li class="li">Send up to <strong>: 3GB</strong></li>
+        <li>Full Support</li>
+      </ul>
+      <button>Learn More</button>
+    </div>
+
+    <!-- Plan 3 (Image Background with Blur) -->
+    <div class="card-container">
+      <div class="card">
+        <div class="ribbon">Recommended</div>
+        <h2>Plan 3</h2>
+        <span class="span">$249</span><sup> .99</sup>
+        <ul>
+          <li class="lii">Storage <strong>: 1TB</strong></li>
+          <li>Users Allowed <strong>: 5</strong></li>
+          <li class="lii">Send up to <strong>: 10GB</strong></li>
+          <li>Full Support</li>
+        </ul>
+        <button class="but">Learn More</button>
+      </div>
+    </div>
+
+    <!-- Plan 3 -->
+    <div class="card">
+      <h2>Plan 3</h2>
+      <span>$399 </span><sup>.99</sup>
+      <ul>
+        <li class="li">Storage <strong>: 2TB</strong></li>
+        <li>Users Allowed <strong>: 10</strong></li>
+        <li class="li">Send up to <strong>: 20GB</strong></li>
+        <li>Full Support</li>
+      </ul>
+      <button>Learn More</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="🧩 ZeroCode SaaS Builder – Build and deploy your own SaaS applications without writing a single line of code." />
+  <meta name="keywords" content="ZeroCode, SaaS Builder, no-code, low-code, web app builder, react, vite" />
+  <meta name="author" content="AyeshaTechX" />
+  <!-- Social Media (Open Graph) -->
+  <meta property="og:title" content="🧩 ZeroCode SaaS Builder" />
+  <meta property="og:description"
+    content="Build powerful SaaS apps without coding. Fast, flexible, and fully customizable." />
+  <meta property="og:image" content="https://yourdomain.com/preview-image.png" />
+  <meta property="og:url" content="https://yourdomain.com" />
+  <meta property="og:type" content="website" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="🧩 ZeroCode SaaS Builder" />
+  <meta name="twitter:description" content="Build powerful SaaS apps without code – A product by AyeshaTechX" />
+  <meta name="twitter:image" content="https://yourdomain.com/preview-image.png" />
+  <title>🧩 ZeroCode SaaS Builder</title>
+  <!-- Favicon (optional) -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <!-- Optional custom fonts or CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+      background: #131313;
+    }
+
+    h1 {
+      text-align: center;
+      color: #13A10E;
+    }
+
+    h2 {
+      text-align: center;
+      color: #13A10E;
+    }
+
+    .blocks {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 20px;
+      justify-content: center;
+    }
+
+    .btn {
+      padding: 10px 15px;
+      border: none;
+      outline: none;
+      color: #fff;
+      cursor: grab;
+      position: relative;
+      z-index: 0;
+      border-radius: 12px;
+      margin-top:20px;
+    }
+
+    .btn::after {
+      content: "";
+      z-index: -1;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #333;
+      left: 0;
+      top: 0;
+      border-radius: 10px;
+    }
+
+    .btn::before {
+      content: "";
+      background: linear-gradient(45deg,
+          #FF0000, #FF7300, #FFFB00, #48FF00,
+          #00FFD5, #002BFF, #FF00C8, #FF0000);
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      background-size: 600%;
+      z-index: -1;
+      width: calc(100% + 4px);
+      height: calc(100% + 4px);
+      filter: blur(8px);
+      animation: glowing 20s linear infinite;
+      transition: opacity .3s ease-in-out;
+      border-radius: 10px;
+      opacity: 1;
+    }
+
+    @keyframes glowing {
+      0% {
+        background-position: 0 0;
+      }
+
+      0% {
+        background-position: 400% 0;
+      }
+
+      0% {
+        background-position: 400% 0;
+      }
+    }
+
+    /* hover */
+    .btn:hover::before {
+      opacity: 1;
+    }
+
+    .btn:active:after {
+      background: transparent;
+    }
+
+    .btn:active {
+      color: #000;
+      font-weight: bold;
+    }
+
+    #canvas {
+      min-height: 2000px;
+      border: 2px dashed #999;
+      background:transparent;
+      padding: 20px;
+      border-radius: 8px;
+      color: white;
+      font-family: sans-serif;
+    }
+
+    .buttons {
+      text-align: center;
+      margin-top: 20px;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      gap: 1%;
+    }
+
+    .button {
+      padding: 10px 15px;
+      border: none;
+      outline: none;
+      color: #fff;
+      cursor: grab;
+      position: relative;
+      z-index: 0;
+      border-radius: 12px;
+      cursor: pointer;
+    }
+
+    .button::after {
+      content: "";
+      z-index: -1;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #333;
+      left: 0;
+      top: 0;
+      border-radius: 10px;
+    }
+
+    .button::before {
+      content: "";
+      background: linear-gradient(45deg,
+          #FF0000, #FF7300, #FFFB00, #48FF00,
+          #00FFD5, #002BFF, #FF00C8, #FF0000);
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      background-size: 600%;
+      z-index: -1;
+      width: calc(100% + 4px);
+      height: calc(100% + 4px);
+      filter: blur(8px);
+      animation: glowing 20s linear infinite;
+      transition: opacity .3s ease-in-out;
+      border-radius: 10px;
+      opacity: 1;
+    }
+
+    /* hover */
+    .button:hover::before {
+      opacity: 1;
+    }
+
+    .button:active:after {
+      background: transparent;
+    }
+
+    .button:active {
+      color: #000;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>🧩 ZeroCode SaaS Builder</h1>
+  <h2>Important note: Drag only one product at a time</h2>
+  <!-- UI Blocks -->
+  <div class="blocks">
+    <div class="btn" draggable="true" data-component="navbar">Navbar</div>
+    <div class="btn" draggable="true" data-component="loginform">Login Form</div>
+    <div class="btn" draggable="true" data-component="pricing">Pricing Table</div>
+    <div class="btn" draggable="true" data-component="dashboard">Dashboard</div>
+    <div class="btn" draggable="true" data-component="hero">Hero Section</div>
+    <div class="btn" draggable="true" data-component="features">Features</div>
+    <div class="btn" draggable="true" data-component="contact">Contact Form</div>
+    <div class="btn" draggable="true" data-component="testimonial">Testimonial</div>
+    <div class="btn" draggable="true" data-component="about">About Us</div>
+    <div class="btn" draggable="true" data-component="cta">Call to Action</div>
+    <div class="btn" draggable="true" data-component="footer">Footer</div>
+    <div class="btn" draggable="true" data-component="services">Services</div>
+    <div class="btn" draggable="true" data-component="stats">Stats Counter</div>
+    <div class="btn" draggable="true" data-component="faq">FAQ Section</div>
+  </div>
+
+  <!-- Drop Canvas -->
+  <div id="canvas" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <p>Drop here 👇</p>
+  </div>
+
+  <!-- Buttons -->
+  <div class="buttons">
+    <button onclick="saveLayout()" class="button">Save</button>
+    <button onclick="loadLayout()" class="button">Load</button>
+  </div>
+
+  <script>
+    // Allow drop on canvas
+    function allowDrop(ev) {
+      ev.preventDefault();
+    }
+
+    // Handle drop event
+    function drop(ev) {
+      ev.preventDefault();
+      const component = ev.dataTransfer.getData("component");
+
+      fetch(`component/${component}.html`)
+        .then(res => res.text())
+        .then(html => {
+          const container = document.createElement("div");
+          container.innerHTML = html;
+          document.getElementById("canvas").appendChild(container);
+        });
+    }
+
+    // Make blocks draggable
+    document.querySelectorAll('.btn').forEach(el => {
+      el.addEventListener('dragstart', (ev) => {
+        ev.dataTransfer.setData("component", ev.target.dataset.component);
+      });
+    });
+
+    // Save layout
+    function saveLayout() {
+      const layout = document.getElementById('canvas').innerHTML;
+      localStorage.setItem('savedLayout', layout);
+      alert("Layout saved!");
+    }
+
+    // Load layout
+    function loadLayout() {
+      const saved = localStorage.getItem('savedLayout');
+      document.getElementById('canvas').innerHTML = saved || '';
+    }
+  </script>
+</body>
+</html>

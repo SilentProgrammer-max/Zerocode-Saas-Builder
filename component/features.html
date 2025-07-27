@@ -1,0 +1,113 @@
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+    }
+    .features{
+        color: white;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-top:60px;
+        margin-bottom:100px;
+        background-color: #121826;
+    }
+    .features h2{
+        font-size: 50px;
+        color: white;
+    }
+    .features h3{
+        color: rgba(255, 255, 255, 0.404);
+        font-weight: 500;
+    }
+    .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap:50px;
+        color: white;
+        background-color: #121826;
+        margin-top: 50px;
+    }
+    .card{
+        width: 380px;
+        height:530px;
+        border:transparent;
+        border-radius: 20px;
+        background-color: #212936;
+        padding: 28px;
+        margin-bottom: 105px;
+        transition: all 0.3s ease;
+    }
+    .card:hover{
+        box-shadow: 0 5px 25px #4c5e7a34;
+        cursor: pointer;
+        transform: translateY(-8px);
+    }
+    .card h1{
+        font-size: 25px;
+        text-align: left;
+        color: white;
+    }
+    .card p{
+        color: #6C727E;
+        text-align: left;
+        line-height: 25px;
+    }
+    .logo{
+        width:65px;
+        border-radius: 100px;
+    }
+    .img {
+        width:380px;
+        height:250px;
+        border-radius: 20px;
+        margin-top:20px;
+    }
+    .log{
+        text-align: left;
+        margin-left:4px;
+        margin-bottom:27px;
+    }
+    @media (max-width: 768px) {
+    .box {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+</style>
+<header>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</header>
+<div class="features">
+    <h2>Quality feedbacks for <br> your SaaS products</h2>
+    <h3>The blocks & components you need</h3>
+    <div class="box">
+        <div class="card">
+            <div class="log">
+            <img src="https://e1.pngegg.com/pngimages/854/75/png-clipart-gumdrop-ai-logo-thumbnail.png" alt="AI Logo" class="logo">
+            </div>
+            <h1>What is AI? Smart Machines, Human Thinking</h1>
+            <p>AI enables machines to mimic human intelligence, perform tasks, and make decisions automatically and efficiently.</p>
+            <img src="https://ric.edu.pk/wp-content/uploads/2025/01/Artificial-Intelligence-1.jpg" alt="AI Image" class="img">
+        </div>
+        <div class="card">
+            <div class="log">
+            <img src="https://cdn-icons-png.flaticon.com/512/80/80676.png" alt="Apple Logo" class="logo">
+            </div>
+            <h1>Machine Learning Learning from Data, Not Rules</h1>
+            <p>ML allows computers to learn patterns from data and improve performance without being explicitly programmed.</p>
+            <img src="https://www.repsol.com/content/dam/repsol-corporate/es/energia-e-innovacion/robot-machine-learning.jpg.transform/rp-rendition-sm/image.jpg" alt="ML Image" class="img">
+        </div>
+        <div class="card">
+            <div class="log">
+            <img src="https://images.scalebranding.com/letter-dl-logo-88851e74-7661-4a8c-aab1-8661500984b7.jpg" alt="DL Logo" class="logo">
+            </div>
+            <h1>Deep Learning Brain-Inspired Neural Intelligence</h1>
+            <p>DL uses multi-layered neural networks to analyze data deeply, powering speech, vision, and decision-making systems.</p>
+            <img src="https://www.qualitor.com.br/media/resize/1920x1920/blogpost/73/650879f234411.jpg" alt="DL Image" class="img">
+        </div>
+    </div>
+</div>

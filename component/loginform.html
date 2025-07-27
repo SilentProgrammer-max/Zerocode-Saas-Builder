@@ -1,0 +1,166 @@
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .login {
+        height: 100vh;
+        /* You can change image as you want */
+        background: url('https://wallpapers.com/images/hd/4k-mountain-l3f04sogeaabr5h0.jpg') no-repeat center center/cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        font-family: sans-serif;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 287px;
+        bottom: 0;
+        left: 0;
+        width: 97.8%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.349);
+        z-index: 1;
+        margin-left: 21px;
+    }
+
+    .login-container {
+        height: 370px;
+        width: 330px;
+        padding: 1rem;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(15px);
+        border-radius: 13px;
+        border: 1px solid rgba(255, 255, 255, 0.048);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.514);
+        color: #fff;
+        z-index: 2;
+    }
+
+    .login-container h2 {
+        margin-top: 25px;
+        text-align: center;
+        margin-bottom: 5px;
+        font-size: 26px;
+        margin-left: auto;
+        color:white;
+
+    }
+
+    .login-container input {
+        width: 91%;
+        padding: 0.8rem;
+        margin: 0.5rem 0.1rem;
+        background: transparent;
+        border: 1px solid white;
+        border-top: transparent;
+        border-right: transparent;
+        border-left: transparent;
+        color: #ffffff;
+        outline: none;
+        margin-top: 1.5rem;
+    }
+
+    .login-container input::placeholder {
+        color: #ffffffc0;
+        font-family: sans-serif;
+    }
+
+    /* You can change button color or radius */
+    .login-container button {
+        width: 99%;
+        padding: 0.6rem;
+        background: #ffe56f;
+        border: 1px solid #ffffff41;
+        border-radius: 5px;
+        color: #000;
+        font-weight: bold;
+        cursor: pointer;
+        margin-top: 2rem;
+        transition: 0.3s;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 24px;
+        margin-left: 2px;
+    }
+
+    .but:hover {
+        background: transparent;
+        color: rgb(255, 255, 255);
+        transform: scale(1);
+
+    }
+
+    .login-container span {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .login-container span a {
+        color: white;
+    }
+
+    .options {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 5px 0;
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    .remember {
+        display: flex;
+        gap: 10px;
+        margin-left: 8px;
+    }
+
+    .remember input[type="checkbox"] {
+        margin: 17px 0px 0px -5px;
+    }
+
+    .remember span {
+        margin: 17px 0px 0px -5px;
+    }
+
+    .forgot {
+        cursor: pointer;
+        color: #ffffff;
+        margin-right: 8px;
+        margin: top -15px;
+    }
+
+    .span {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0px;
+        font-size: 0.9rem;
+    }
+</style>
+<div class="login">
+    <div class="overlay"></div>
+    <div class="login-container">
+        <h2>Login</h2>
+        <input type="text" placeholder="Enter your email" />
+        <input type="password" placeholder="Enter your password" />
+        <div class="options">
+            <label class="remember">
+                <input type="checkbox" name="password" value="yes">
+                <span>Remember me</span>
+            </label>
+            <span class="forgot">Forgot Password?</span>
+        </div>
+        <button class="but">Log In</button>
+        <span class="span">Don't have an account?&nbsp;<a href="$">Register</a></span>
+    </div>
+</div>

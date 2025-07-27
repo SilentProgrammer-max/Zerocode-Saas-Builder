@@ -1,0 +1,163 @@
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .hero {
+        background-color: white;
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav {
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 48px;
+        padding: 20px;
+    }
+
+    .nav ul {
+        display: flex;
+        gap: 45px;
+        padding: 0;
+        margin: 0;
+        white-space: nowrap;
+        margin-left: 600px;
+    }
+
+    .nav ul li {
+        list-style: none;
+        font-size: 21px;
+        color: rgba(0, 0, 0, 0.726);
+    }
+
+    .nav ul li:hover {
+        color: black;
+        cursor: pointer;
+    }
+
+    .fa-utensils {
+        font-size: 4rem;
+        font-weight: 500;
+        color: rgba(0, 0, 0, 0.829);
+        cursor: pointer;
+    }
+
+    .fa-utensils:hover {
+        color: black;
+    }
+
+    .fa-magnifying-glass {
+        font-size: 1.3rem;
+        color: rgba(0, 0, 0, 0.877);
+        cursor: pointer;
+    }
+
+    .img {
+        background-image: url('https://wallpapers.com/images/hd/food-4k-3gsi5u6kjma5zkj0.jpg');
+        background-size: cover;
+        width: 100%;
+        height: 120%;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 105;
+        bottom: 105;
+        left: 0;
+        width: 97.7%;
+        height: 90%;
+        background-color: rgba(0, 0, 0, 0.61);
+        z-index: 1;
+        margin-left: 22px;
+        margin-bottom: auto;
+
+    }
+    .section {
+        position: relative;
+        z-index: 2;
+        color: white;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 100px 350px;
+    }
+
+    .section h1 {
+        font-family: Times New Roman;
+        font-size: 90px;
+        margin-bottom: 20px;
+        color: white;
+    }
+
+    .section h2 {
+        font-family: Times New Roman;
+        letter-spacing: 5px;
+        font-weight: 500;
+        margin-bottom: 80px;
+        color: white;
+    }
+
+    .section p {
+        font-size: 20px;
+        font-family: sans-serif;
+        word-spacing: 2px;
+    }
+
+    .section button {
+        padding: 24px 50px;
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        font-size: 19px;
+        white-space: nowrap;
+        margin: 80px 450px;
+        border-radius: 50px;
+        border: transparent;
+        color: #323233;
+        font-family: sans-serif;
+        font-weight: 600;
+        text-transform: uppercase;
+        transition: all 0.5s ease;
+    }
+
+    .but:hover {
+        color: white;
+        background-color: #323233;
+        cursor: pointer;
+        transform: scale(1);
+        color: auto;
+    }
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<div class="hero">
+    <nav class="nav">
+        <div class="logo">
+            <i class="fa-solid fa-utensils"></i>
+        </div>
+        <ul>
+            <li>All recipes - search</li>
+            <li>Recipes for beginners</li>
+            <li>Videos</li>
+            <li>Kinds of food</li>
+            <li>Blog</li>
+        </ul>
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </nav>
+    <div class="img">
+        <div class="overlay"></div>
+        <div class="section">
+            <h1>Cooking Made Simple</h1>
+            <h2>RECIPES FOR EVERYONE</h2>
+            <p>Discover easy, delicious recipes for every meal. From breakfast to dinner, cook tasty dishes quickly with
+                simple ingredients <br>and step-by-step instructions anyone can follow.</p>
+            <button class="but">Learn More</button>
+        </div>
+    </div>
+</div>

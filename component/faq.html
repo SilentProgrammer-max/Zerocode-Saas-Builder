@@ -1,0 +1,301 @@
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .faq {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 30px;
+        font-family: sans-serif;
+        margin-bottom: 10px;
+        background-color:white;
+        padding:100px;
+    }
+
+    .img {
+        background-image: url(https://t4.ftcdn.net/jpg/02/84/80/21/360_F_284802120_7t5ww65bjGsPYyxAwbpppNgs2r9P1cVy.jpg);
+        background-size: cover;
+        width: 1400px;
+        height: 312px;
+        display: grid;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+    }
+
+    .overlay {
+        position: absolute;
+        z-index: 10;
+        height: 312px;
+        width: 1400px;
+        background-color: rgba(0, 0, 0, 0.623);
+        display: grid;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 35px;
+        color: white;
+        z-index: 3;
+        font-family: Times New Roman;
+        font-weight: 100;
+        margin-top: -75px;
+        margin-bottom: -7px;
+    }
+
+    .search-container {
+        position: relative;
+        width: fit-content;
+        margin-top: -238px;
+    }
+
+    .search-container input {
+        padding-right: 40px;
+        padding-left: 18px;
+        height: 47px;
+        font-size: 14px;
+        width: 523px;
+        border-radius: 100px;
+        border: transparent;
+        box-shadow: inset 0 0 10px rgba(49, 49, 49, 0.5);
+    }
+
+    .search-container input::placeholder {
+        color: rgba(0, 0, 0, 0.562);
+        font-size: 16px;
+        letter-spacing: 0.3px;
+        border: transparent;
+    }
+
+    .search-container i {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: rgb(31, 31, 31);
+        pointer-events: none;
+        font-size: 20px;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+
+    .help {
+        margin-top: 25px;
+    }
+
+    .help p {
+        color: white;
+    }
+
+    .help button {
+        padding: 10px 30px;
+        border: 2px solid #EF9B23;
+        background-color: transparent;
+        color: #EF9B23;
+        font-size: 15px;
+        border-radius: 30px;
+        transition: all 0.5s ease;
+        margin-top: 10px;
+    }
+
+    .but:hover {
+        border: 2px solid rgba(255, 255, 255, 0.137);
+        background-color: #013E5F;
+        box-shadow: 0px 5px 5px rgba(255, 255, 255, 0.137);
+        color: white;
+        cursor: pointer;
+
+    }
+
+    .im {
+        background-image: url(https://static.vecteezy.com/system/resources/thumbnails/021/646/199/small/abstract-blue-liquid-wave-banner-template-free-vector.jpg);
+        background-repeat: no-repeat;
+        position: absolute;
+        z-index: 0;
+        top: 188px;
+        width: 1400px;
+        right: 0px;
+        background-size: cover;
+        height: 160px;
+    }
+
+    .lay {
+        position: absolute;
+        z-index: 10;
+        height: 159px;
+        width: 1400px;
+        background-color: rgba(0, 0, 0, 0.623);
+        display: grid;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .la {
+        z-index: 1;
+        height: 59px;
+        width: 1400px;
+        background-color: #001635;
+        display: grid;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 159px;
+    }
+
+    .points {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        color: white;
+        margin-top: 100px;
+        z-index: 1;
+        margin-top: 58px;
+    }
+
+    .line {
+        height: 3px;
+        background-color: #43434340;
+        width: 1400px;
+        z-index: 10;
+        margin-top: 100px;
+        border-radius: 100px;
+        position: relative;
+        top: 207px;
+    }
+
+    .span {
+        height: 3px;
+        background-color: black;
+        width: 11%;
+        z-index: 100;
+        position: absolute;
+        top: 412px;
+        right: 699px;
+    }
+
+    .card {
+        background: linear-gradient(to bottom, #ffffff, #ffffffd5, #ffffffc2, #ffffff);
+        box-shadow: inset 0 0 100px rgba(141, 141, 141, 0.226),
+            0 0 70px rgba(99, 99, 99, 0.377);
+        height: 550px;
+        padding-top: 80px;
+    }
+
+    .card h2 {
+        font-size: 35px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 100;
+        letter-spacing: 2px;
+        margin-top: 75px;
+        columns: rgba(0, 0, 0, 0.178);
+        color: rgba(0, 0, 0, 0.925);
+    }
+
+    .questions-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* 3 columns */
+        /* Space between cards */
+        padding: 0 40px;
+    }
+
+    .question {
+        background-color:transparent;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: left;
+    }
+    .question p{
+        color: rgba(0, 0, 0, 0.582);
+    }
+    .question h3{
+        font-size: 17px;
+        color: rgba(0, 0, 0, 0.877);
+    }
+    .question:hover{
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        cursor: pointer;
+    }
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+<div class="faq">
+    <div class="img">
+        <div class="overlay">
+            <h1>How can we help?</h1>
+            <div class="search-container">
+                <input type="text" placeholder="Type your question">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="im">
+                <div class="lay">
+                    <div class="help">
+                        <p>Having problems with an order? Reach out to the seller with a help request.</p>
+                        <button class="but">Get help with an order</button>
+                    </div>
+                    <div class="la"></div>
+                    <div class="points">
+                        <span>Shopping on Etsy</span>
+                        <span>Selling with Etsy</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="span"></div>
+    </div>
+    <div class="card">
+        <h2>Featured articles</h2>
+        <div class="questions-container">
+            <div class="question">
+                <p>After You Purchase</p>
+                <h3>What's the Status of My Order?</h3>
+            </div>
+            <div class="question">
+                <p>Shopping & Gifting</p>
+                <h3>How to Contact a Shop?</h3>
+            </div>
+            <div class="question">
+                <p>Searching for Items</p>
+                <h3>How to Find the Best Items for You on Etsy?</h3>
+            </div>
+
+            <div class="question">
+                <p>Order Issues & Returns</p>
+                <h3>How to Get Help with An Order?</h3>
+            </div>
+            <div class="question">
+                <p>Shopping & Gifting</p>
+                <h3>How to Buy an Etsy Gift Card?</h3>
+            </div>
+            <div class="question">
+                <p>After You PUrchase</p>
+                <h3>How Do I Update My Shipping Address?</h3>
+            </div>
+            <div class="question">
+                <p>Shopping & Gifting</p>
+                <h3>How to Purchase an Item On Etsy?</h3>
+            </div>
+            <div class="question">
+                <p>Searching for Items</p>
+                <h3>How to Search for Items and Shops on Etsy?</h3>
+            </div>
+            <div class="question">
+                <p>Buying Safely</p>
+                <h3>Tips for Buying Safely on Etsy</h3>
+            </div>
+        </div>
+    </div>
+    <div>
+    </div>

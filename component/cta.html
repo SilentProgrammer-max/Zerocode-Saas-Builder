@@ -1,0 +1,219 @@
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .cta {
+        background-color: white;
+        font-family: sans-serif;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 428px;
+        background-color: white;
+    }
+
+    .nav h2 {
+        font-size: 30px;
+        font-weight: 600;
+        color: #60CE80;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .nav ul {
+        list-style: none;
+        display: flex;
+        gap: 50px;
+    }
+
+    .nav ul li a {
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.719);
+        font-weight: 600;
+        transition: all 0.3s ease;
+    }
+
+    .nav ul li a:hover {
+        color: black;
+    }
+
+    ul li:last-child a {
+        color: #60CE80 !important;
+    }
+
+    ul li:last-child a:hover {
+        color: #308649 !important;
+    }
+
+    .home {
+        background-color: #60CE80;
+        height: 835px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        gap: 170px;
+    }
+
+    .top {
+        background-color: #3BC162;
+        border-radius: 5px 5px 0 0px;
+        height: 85px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        font-size: large;
+        letter-spacing: 1px;
+    }
+
+    .box {
+        background-color: white;
+        width: 600px;
+        height: 380px;
+        border-radius: 5px;
+        display: grid;
+        transition: all 0.3s ease;
+    }
+
+    .box:hover {
+        box-shadow: 0 5px 25px #03442460;
+        cursor: pointer;
+        transform: translateY(-8px);
+    }
+
+    .name-row {
+        display: flex;
+        gap: 0;
+        margin-top: -5px;
+    }
+
+    .name-row input {
+        width: 245px;
+        box-sizing: border-box;
+        padding: 0 25px;
+        height: 54px;
+        background-color: #E8EAEC;
+        border: transparent;
+        border-radius: 5px;
+    }
+
+    .name-row input:first-child {
+        margin-left: 45px;
+        margin-right: 10px;
+    }
+
+    .name-row input:last-child {
+        margin-right: 45px;
+        margin-left: 10px;
+    }
+
+    .name-row input::placeholder {
+        color: rgba(0, 0, 0, 0.349);
+        font-family: sans-serif;
+        font-size: 15px;
+    }
+
+    .box input[type="email"] {
+        margin: -22px 46px 0px 46px;
+        width: 509px;
+        box-sizing: border-box;
+        padding: 0 25px;
+        height: 54px;
+        background-color: #E8EAEC;
+        border: transparent;
+        border-radius: 5px;
+    }
+
+    .box input::placeholder {
+        color: rgba(0, 0, 0, 0.349);
+        font-family: sans-serif;
+        font-size: 15px;
+    }
+
+    .div {
+        background-color: rgba(0, 0, 0, 0.123);
+        height: 1px;
+        margin: -13px 45px;
+
+    }
+
+    .but {
+        background-color: #60CF7E;
+        width: 259px;
+        height: 53px;
+        margin-left: 48px;
+        border: transparent;
+        color: white;
+        font-size: 16px;
+        letter-spacing: 1px;
+        border-radius: 3px;
+        margin-top: -25px;
+    }
+
+    .but:hover {
+        cursor: pointer;
+        filter: brightness(0.9);
+    }
+
+    .ho {
+        margin-top: -10px;
+    }
+
+    .ho h1 {
+        color: white;
+        font-size: 50px;
+        text-align: left;
+        line-height: 70px;
+        letter-spacing: 1px;
+    }
+
+    .ho p {
+        color: white;
+        font-size: 20px;
+        text-align: left;
+        letter-spacing: 2px;
+        margin-top: -14px;
+    }
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<div class="cta">
+    <nav class="nav">
+        <h2>treehouse</h2>
+        <ul>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Orgamizations</a></li>
+            <li><a href="#">Stories</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Sign in</a></li>
+            <li><a href="#">Free trial</a></li>
+        </ul>
+    </nav>
+    <div class="home">
+        <div class="ho">
+            <h1>Change your Career. <br> Change your Life.</h1>
+            <p>Make 2016 the year you learn to code.</p>
+        </div>
+        <div class="box">
+            <div class="top">
+                Get Started today!
+            </div>
+            <div class="name-row">
+                <input type="text" placeholder="First name *">
+                <input type="text" placeholder="Last name *">
+            </div>
+
+            <input type="email" placeholder="Email address *">
+            <div class="div"></div>
+            <button class="but">Claim Your Free Trail <i class="fa-solid fa-play"></i></button>
+        </div>
+    </div>
+</div>

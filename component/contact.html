@@ -1,0 +1,187 @@
+<style>
+    .contact {
+        background-color: white;
+        font-family: sans-serif;
+        display: flex;
+        padding: 20px;
+        justify-content: center;
+        position: relative;
+    }
+
+    /* Image background */
+    .img {
+        background-image: url('https://w0.peakpx.com/wallpaper/387/282/HD-wallpaper-high-rise-building.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 30vw;
+        height: 93.8vh;
+        z-index: 1;
+        position: relative;
+        box-shadow: 0 13px 20px rgba(0, 0, 0, 0.322);
+    }
+
+    /* Overlay on top of image */
+    .overlay {
+        position: absolute;
+        width: 19.6vw;
+        height: 37vh;
+        background-color: rgba(0, 0, 0, 0.76);
+        color: white;
+        z-index: 2;
+        margin-left: -588px;
+        margin-right: auto;
+        text-align: left;
+        padding: 260px 100px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        gap: 15px;
+    }
+
+    .overlay span {
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    .overlay p {
+        color: rgba(255, 255, 255, 0.5);
+        line-height: 23px;
+        margin-bottom: 40px;
+        margin-left: 37px;
+    }
+
+    .p {
+        color: #1f925b !important;
+        font-weight: 600;
+    }
+
+    .form {
+        background-color: white;
+        border: 1px solid rgba(0, 0, 0, 0.137);
+        border-right: 10px solid rgba(206, 206, 206, 0.295);
+        width: 30vw;
+        height: 93.8vh;
+        box-shadow: 0 13px 20px rgba(0, 0, 0, 0.322);
+        text-align: center;
+    }
+
+    .form h1 {
+        font-size: 30px;
+        font-weight: 500;
+        margin-top: 55px;
+        letter-spacing: 3px;
+        color: rgba(0, 0, 0, 0.76);
+        margin-bottom: 50px;
+    }
+
+    .box {
+        border: 1px solid rgba(0, 0, 0, 0.151);
+        width: 71%;
+        padding: 6px 26px;
+        text-align: left;
+        margin-left: 55px;
+        color: rgba(0, 0, 0, 0.479);
+        font-size: 12px;
+    }
+
+    .form input {
+        border: 1px solid rgba(0, 0, 0, 0.151);
+        width: 403px;
+        padding: 0px 29px;
+        text-align: left;
+        margin-left: -3.5px;
+        height: 57px;
+        margin-bottom: 20px;
+        font-size: 17px;
+        color: rgba(0, 0, 0, 0.788);
+    }
+
+    .form input::placeholder {
+        color: rgba(0, 0, 0, 0.24);
+    }
+
+    .input-row {
+        display: flex;
+    }
+
+    .input-row input {
+        width: 40.5%;
+        /* each takes half space */
+        box-sizing: border-box;
+        /* ensures padding/border included in width */
+    }
+
+    .input-row input:first-child {
+        margin-left: 55px;
+        /* sirf pehle input ko right shift kar diya */
+    }
+
+    .form textarea {
+        border: 1px solid rgba(0, 0, 0, 0.151);
+        width: 403px;
+        padding: 8px 29px;
+        text-align: left;
+        margin-left: -2.5px;
+        margin-bottom: 20px;
+        font-size: 17px;
+        color: rgba(0, 0, 0, 0.788);
+        height: 120px;
+    }
+
+    button {
+        background-color: #00AD5E;
+        border: transparent;
+        border-radius: 2px;
+        padding: 15px 36px;
+        color: white;
+        font-size: 12px;
+        font-weight: 600;
+        margin-top: 5px;
+        transition: all 0.5s ease;
+    }
+
+    .but:hover {
+        color: #ffffff;
+        background-color: #0c6e42;
+        cursor: pointer;
+    }
+    textarea::placeholder{
+        color: rgba(0, 0, 0, 0.24);
+        font-family: sans-serif;
+    }
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<div class="contact">
+    <div class="img"></div>
+    <div class="overlay">
+        <span> <i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Address</span>
+        <p>Mada Center 8th floor, 379 Hudson St, <br> New York, NY 10018, US</p>
+        <span> <i class="fa-solid fa-phone"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Let's Talk</span>
+        <p class="p">+1 800 1236879</p>
+        <span> <i class="fa-regular fa-envelope"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; General Support</span>
+        <p class="p">contact@example.com</p>
+    </div>
+    <div class="form">
+        <h1>Send Us Message</h1>
+        <div class="box">
+            <h3>TELL US YOUR NAME *</h3>
+        </div>
+        <div class="input-row">
+            <input type="text" placeholder="First name">
+            <input type="text" placeholder="Last name">
+        </div>
+        <div class="box">
+            <h3>ENTER YOUR EMAIL *</h3>
+        </div>
+        <input type="email" placeholder="Eg. example@email.com">
+        <div class="box">
+            <h3>ENTER PHONE NUMBER</h3>
+        </div>
+        <input type="text" placeholder="Eg. +1 800 000000">
+        <div class="box">
+            <h3>MESSAGE *</h3>
+        </div>
+        <textarea name="Message" id="message" placeholder="Enter your message"></textarea>
+        <button class="but">SEND MESSAGE</button>
+    </div>
+</div>

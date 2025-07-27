@@ -57,6 +57,8 @@
 <img src="assets/Stats Counter.PNG" width="1000" />
 <img src="assets/faq section.PNG" width="1000" />
 
+---
+
 ## 📁 Project Structure
 
 ```
@@ -128,7 +130,6 @@ Here are just a few sample blocks (you can create many more!):
   <button>Login</button>
 </form>
 ```
-
 ### 💵 pricing.html
 
 ```html
@@ -162,12 +163,6 @@ Here are just a few sample blocks (you can create many more!):
 * 🌐 Shareable layout link (via JSON blob)
 * 🌈 Component style editor (like changing colors/fonts)
 * 📁 Multi-page layout builder
-
----
-
-## 📸 Full Preview (Optional Demo Image)
-
-![App Demo](https://i.imgur.com/vfx0UYA.png)
 
 ---
 
